@@ -1,5 +1,7 @@
 package com.github.mim1q.convenientdecor.block;
 
+import java.util.Locale;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -66,7 +68,7 @@ public class PitchforkBlock extends Block {
 
     @Override
     public String asString() {
-      return name().toLowerCase();
+      return name().toLowerCase(Locale.ROOT);
     }
   }
 }
